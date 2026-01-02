@@ -37,4 +37,4 @@ override.tf.json
 terraform.rc
 
 # Ignore the sopes_saloon directory
-sopes_saloon/
+# sopes_saloon/

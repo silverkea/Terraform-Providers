@@ -1,0 +1,200 @@
+2026-01-02T17:07:17.195+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:07:17.195+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:07:17.195+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "plan"}
+2026-01-02T17:07:17.199+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:07:17.200+1100 [INFO]  CLI command args: []string{"plan"}
+2026-01-02T17:07:17.876+1100 [INFO]  backend/local: starting Plan operation
+2026-01-02T17:07:17.882+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:07:18.079+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:07:18.079+1100"
+2026-01-02T17:07:18.996+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=29036
+2026-01-02T17:07:18.996+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:07:19.015+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:07:19.015+1100"
+2026-01-02T17:07:19.041+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=18536
+2026-01-02T17:07:19.042+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:07:19.225+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:07:19.225+1100"
+2026-01-02T17:07:19.244+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:07:19.261+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:07:19.261+1100"
+2026-01-02T17:07:19.284+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=29700
+2026-01-02T17:07:19.385+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=19164
+2026-01-02T17:07:19.385+1100 [INFO]  backend/local: plan calling Plan
+2026-01-02T17:07:19.387+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:07:19.557+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:07:19.556+1100"
+2026-01-02T17:07:19.586+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:07:19.604+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:07:19.603+1100"
+2026-01-02T17:07:19.632+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=43900
+2026-01-02T17:07:19.714+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: Retrieved credentials: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=994e6983-6fc9-82d5-0bd4-e4f9d19f3f15 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.69/logging/tf_logger.go:39 tf_aws.credentials_source=EnvConfigCredentials tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider @module=aws.aws-base timestamp="2026-01-02T17:07:19.714+1100"
+2026-01-02T17:07:20.515+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: Retrieved caller identity from STS: tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.69/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=994e6983-6fc9-82d5-0bd4-e4f9d19f3f15 tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-01-02T17:07:20.514+1100"
+2026-01-02T17:07:20.529+1100 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.prod_vpc.aws_vpc.main, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .instance_tenancy: planned value cty.StringVal("default") for a non-computed attribute
+2026-01-02T17:07:20.534+1100 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_security_group.main, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ingress: planned value cty.SetVal([]cty.Value{cty.ObjectVal(map[string]cty.Value{"cidr_blocks":cty.ListVal([]cty.Value{cty.StringVal("0.0.0.0/0")}), "description":cty.StringVal(""), "from_port":cty.NumberIntVal(80), "ipv6_cidr_blocks":cty.ListValEmpty(cty.String), "prefix_list_ids":cty.ListValEmpty(cty.String), "protocol":cty.StringVal("tcp"), "security_groups":cty.SetValEmpty(cty.String), "self":cty.False, "to_port":cty.NumberIntVal(80)})}) does not match config value cty.SetVal([]cty.Value{cty.ObjectVal(map[string]cty.Value{"cidr_blocks":cty.ListVal([]cty.Value{cty.StringVal("0.0.0.0/0")}), "description":cty.NullVal(cty.String), "from_port":cty.NumberIntVal(80), "ipv6_cidr_blocks":cty.NullVal(cty.List(cty.String)), "prefix_list_ids":cty.NullVal(cty.List(cty.String)), "protocol":cty.StringVal("tcp"), "security_groups":cty.NullVal(cty.Set(cty.String)), "self":cty.NullVal(cty.Bool), "to_port":cty.NumberIntVal(80)})})
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .egress: planned value cty.SetVal([]cty.Value{cty.ObjectVal(map[string]cty.Value{"cidr_blocks":cty.ListVal([]cty.Value{cty.StringVal("0.0.0.0/0")}), "description":cty.StringVal(""), "from_port":cty.NumberIntVal(0), "ipv6_cidr_blocks":cty.ListValEmpty(cty.String), "prefix_list_ids":cty.ListValEmpty(cty.String), "protocol":cty.StringVal("-1"), "security_groups":cty.SetValEmpty(cty.String), "self":cty.False, "to_port":cty.NumberIntVal(0)})}) does not match config value cty.SetVal([]cty.Value{cty.ObjectVal(map[string]cty.Value{"cidr_blocks":cty.ListVal([]cty.Value{cty.StringVal("0.0.0.0/0")}), "description":cty.NullVal(cty.String), "from_port":cty.NumberIntVal(0), "ipv6_cidr_blocks":cty.NullVal(cty.List(cty.String)), "prefix_list_ids":cty.NullVal(cty.List(cty.String)), "protocol":cty.StringVal("-1"), "security_groups":cty.NullVal(cty.Set(cty.String)), "self":cty.NullVal(cty.Bool), "to_port":cty.NumberIntVal(0)})})
+2026-01-02T17:07:21.351+1100 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.prod_vpc.aws_subnet.public["subnet_1"], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .assign_ipv6_address_on_creation: planned value cty.False for a non-computed attribute
+      - .enable_dns64: planned value cty.False for a non-computed attribute
+      - .enable_resource_name_dns_aaaa_record_on_launch: planned value cty.False for a non-computed attribute
+      - .ipv6_native: planned value cty.False for a non-computed attribute
+      - .enable_resource_name_dns_a_record_on_launch: planned value cty.False for a non-computed attribute
+2026-01-02T17:07:21.361+1100 [WARN]  provider.terraform-provider-aws_v6.27.0_x5.exe: unable to require attribute replacement: @module=sdk.helper_schema error="ForceNew: No changes for user_data_base64" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=8b92ce1b-299e-6e80-4ad9-922e90816f8a tf_resource_type=aws_instance tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.38.1/helper/customdiff/force_new.go:32 tf_attribute_path=user_data_base64 tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-01-02T17:07:21.361+1100"
+2026-01-02T17:07:21.362+1100 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.web, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .vpc_security_group_ids: planned value cty.UnknownVal(cty.Set(cty.String)) does not match config value cty.SetVal([]cty.Value{cty.UnknownVal(cty.String)})
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .enclave_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .maintenance_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .primary_network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ebs_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .instance_market_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .private_dns_name_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .capacity_reservation_specification: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .metadata_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .cpu_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ephemeral_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .root_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2026-01-02T17:07:21.389+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=34392
+2026-01-02T17:07:21.393+1100 [INFO]  backend/local: plan operation completed
+2026-01-02T17:15:54.022+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:15:54.023+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:15:54.023+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "init"}
+2026-01-02T17:15:54.026+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:15:54.027+1100 [INFO]  CLI command args: []string{"init"}
+2026-01-02T17:16:06.113+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:16:06.113+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:16:06.113+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "fmt"}
+2026-01-02T17:16:06.117+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:16:06.117+1100 [INFO]  CLI command args: []string{"fmt"}
+2026-01-02T17:16:10.989+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:16:10.990+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:16:10.990+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "validate"}
+2026-01-02T17:16:10.992+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:16:10.993+1100 [INFO]  CLI command args: []string{"validate"}
+2026-01-02T17:16:11.690+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:16:11.900+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:16:11.900+1100"
+2026-01-02T17:16:12.817+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=10704
+2026-01-02T17:16:12.818+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:16:12.840+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:16:12.840+1100"
+2026-01-02T17:16:12.878+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=43528
+2026-01-02T17:16:12.882+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:16:13.065+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:16:13.064+1100"
+2026-01-02T17:16:13.082+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:16:13.101+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:16:13.101+1100"
+2026-01-02T17:16:13.120+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:16:13.274+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:16:13.273+1100"
+2026-01-02T17:16:13.302+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=36680
+2026-01-02T17:16:13.325+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=16200
+2026-01-02T17:16:13.400+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=42844
+2026-01-02T17:17:15.125+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:17:15.125+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:17:15.125+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "validate"}
+2026-01-02T17:17:15.127+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:17:15.129+1100 [INFO]  CLI command args: []string{"validate"}
+2026-01-02T17:17:25.650+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:17:25.650+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:17:25.650+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "fmt"}
+2026-01-02T17:17:25.655+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:17:25.655+1100 [INFO]  CLI command args: []string{"fmt"}
+2026-01-02T17:17:31.900+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:17:31.900+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:17:31.900+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "validate"}
+2026-01-02T17:17:31.904+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:17:31.904+1100 [INFO]  CLI command args: []string{"validate"}
+2026-01-02T17:17:44.039+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:17:44.040+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:17:44.040+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "validate"}
+2026-01-02T17:17:44.042+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:17:44.043+1100 [INFO]  CLI command args: []string{"validate"}
+2026-01-02T17:17:44.726+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:17:44.916+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:17:44.915+1100"
+2026-01-02T17:17:45.814+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=43548
+2026-01-02T17:17:45.815+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:17:45.835+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:17:45.835+1100"
+2026-01-02T17:17:45.861+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=32496
+2026-01-02T17:17:45.864+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:17:46.051+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:17:46.051+1100"
+2026-01-02T17:17:46.071+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:17:46.090+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:17:46.090+1100"
+2026-01-02T17:17:46.109+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:17:46.263+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:17:46.262+1100"
+2026-01-02T17:17:46.291+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=38224
+2026-01-02T17:17:46.322+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=36336
+2026-01-02T17:17:46.405+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=38120
+2026-01-02T17:17:57.964+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:17:57.964+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:17:57.964+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "plan"}
+2026-01-02T17:17:57.966+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:17:57.967+1100 [INFO]  CLI command args: []string{"plan"}
+2026-01-02T17:17:58.652+1100 [INFO]  backend/local: starting Plan operation
+2026-01-02T17:17:58.657+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:17:58.841+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:17:58.841+1100"
+2026-01-02T17:17:59.794+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=30460
+2026-01-02T17:17:59.795+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:17:59.816+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:17:59.815+1100"
+2026-01-02T17:17:59.841+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=8716
+2026-01-02T17:17:59.845+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:17:59.863+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:17:59.863+1100"
+2026-01-02T17:17:59.882+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:18:00.051+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:18:00.051+1100"
+2026-01-02T17:18:00.071+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:18:00.229+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:18:00.229+1100"
+2026-01-02T17:18:00.257+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=25032
+2026-01-02T17:18:00.348+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=35008
+2026-01-02T17:18:00.375+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=1776
+2026-01-02T17:18:00.375+1100 [INFO]  backend/local: plan calling Plan
+2026-01-02T17:18:00.379+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:18:00.548+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:18:00.547+1100"
+2026-01-02T17:18:00.570+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:18:00.588+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:18:00.587+1100"
+2026-01-02T17:18:00.606+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:18:00.756+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:18:00.755+1100"
+2026-01-02T17:18:00.777+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: Retrieved credentials: tf_req_id=f6f7518a-dc13-adab-a5d5-84e24bbe74fb tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.69/logging/tf_logger.go:39 tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws.aws-base tf_aws.credentials_source=EnvConfigCredentials tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-01-02T17:18:00.777+1100"
+2026-01-02T17:18:00.788+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=36228
+2026-01-02T17:18:00.864+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: Retrieved credentials: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=781ee8ea-2b6e-9309-6b20-b6767c08ebd1 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.69/logging/tf_logger.go:39 @module=aws.aws-base tf_aws.credentials_source=EnvConfigCredentials tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-01-02T17:18:00.864+1100"
+2026-01-02T17:18:01.670+1100 [ERROR] provider.terraform-provider-aws_v6.27.0_x5.exe: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.29.0/tfprotov5/internal/diag/diagnostics.go:58 @module=sdk.proto diagnostic_detail="" tf_proto_version=5.10 tf_rpc=Configure diagnostic_severity=ERROR diagnostic_summary="Retrieving AWS account details: validating provider credentials: retrieving caller identity from STS: operation error STS: GetCallerIdentity, https response error StatusCode: 403, RequestID: c8cf3303-f577-4843-9d86-99e20b2728d9, api error ExpiredToken: The security token included in the request is expired" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f6f7518a-dc13-adab-a5d5-84e24bbe74fb timestamp="2026-01-02T17:18:01.670+1100"
+2026-01-02T17:18:01.670+1100 [ERROR] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]" error: Retrieving AWS account details: validating provider credentials: retrieving caller identity from STS: operation error STS: GetCallerIdentity, https response error StatusCode: 403, RequestID: c8cf3303-f577-4843-9d86-99e20b2728d9, api error ExpiredToken: The security token included in the request is expired
+2026-01-02T17:18:02.172+1100 [ERROR] provider.terraform-provider-aws_v6.27.0_x5.exe: Response contains error diagnostic: diagnostic_summary="Retrieving AWS account details: validating provider credentials: retrieving caller identity from STS: operation error STS: GetCallerIdentity, https response error StatusCode: 403, RequestID: 3e8964a3-f9e2-45ab-b041-76fca9e10373, api error ExpiredToken: The security token included in the request is expired" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=781ee8ea-2b6e-9309-6b20-b6767c08ebd1 tf_rpc=Configure @caller=github.com/hashicorp/terraform-plugin-go@v0.29.0/tfprotov5/internal/diag/diagnostics.go:58 diagnostic_detail="" diagnostic_severity=ERROR tf_proto_version=5.10 @module=sdk.proto timestamp="2026-01-02T17:18:02.172+1100"
+2026-01-02T17:18:02.172+1100 [ERROR] vertex "provider[\"registry.terraform.io/hashicorp/aws\"].dr" error: Retrieving AWS account details: validating provider credentials: retrieving caller identity from STS: operation error STS: GetCallerIdentity, https response error StatusCode: 403, RequestID: 3e8964a3-f9e2-45ab-b041-76fca9e10373, api error ExpiredToken: The security token included in the request is expired
+2026-01-02T17:18:02.172+1100 [WARN]  Planning encountered errors, so plan is not applyable
+2026-01-02T17:18:02.172+1100 [INFO]  backend/local: plan operation completed
+2026-01-02T17:18:02.282+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=4596
+2026-01-02T17:18:02.287+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=19260
+2026-01-02T17:41:51.436+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:41:51.436+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:41:51.436+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "validate"}
+2026-01-02T17:41:51.439+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:41:51.440+1100 [INFO]  CLI command args: []string{"validate"}
+2026-01-02T17:42:24.904+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:42:24.905+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:42:24.905+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "init"}
+2026-01-02T17:42:24.908+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:42:24.908+1100 [INFO]  CLI command args: []string{"init"}
+2026-01-02T17:42:29.361+1100 [INFO]  Terraform version: 1.14.3
+2026-01-02T17:42:29.361+1100 [INFO]  Go runtime version: go1.25.5
+2026-01-02T17:42:29.361+1100 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "validate"}
+2026-01-02T17:42:29.364+1100 [INFO]  Loading CLI configuration from C:\Users\terry\AppData\Roaming\terraform.rc
+2026-01-02T17:42:29.365+1100 [INFO]  CLI command args: []string{"validate"}
+2026-01-02T17:42:30.016+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:42:30.201+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:42:30.200+1100"
+2026-01-02T17:42:31.155+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=8928
+2026-01-02T17:42:31.155+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:42:31.177+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:42:31.177+1100"
+2026-01-02T17:42:31.204+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=27132
+2026-01-02T17:42:31.209+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:42:31.227+1100 [INFO]  provider.terraform-provider-random_v3.7.2_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:42:31.227+1100"
+2026-01-02T17:42:31.250+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:42:31.422+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:42:31.422+1100"
+2026-01-02T17:42:31.443+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:42:31.592+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:42:31.592+1100"
+2026-01-02T17:42:31.613+1100 [INFO]  provider: configuring client automatic mTLS
+2026-01-02T17:42:31.767+1100 [INFO]  provider.terraform-provider-aws_v6.27.0_x5.exe: configuring server automatic mTLS: timestamp="2026-01-02T17:42:31.766+1100"
+2026-01-02T17:42:31.791+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe id=36020
+2026-01-02T17:42:31.814+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=24324
+2026-01-02T17:42:31.892+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=21952
+2026-01-02T17:42:31.916+1100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/windows_amd64/terraform-provider-aws_v6.27.0_x5.exe id=28400
